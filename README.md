@@ -62,19 +62,6 @@ The code prioritizes clarity and simplicity over efficiency or performance. For 
 - `bitstorm.protocol.PeerStreamIterator` is an `async` iterator that continuously reads and parses messages from a peer connection.
 - Individual BitTorrent messages are implemented as classes with `encode` and `decode` methods.
   - Since BitStorm does not yet support seeding, some messages are only implemented for downloading.
-
----
-## References
-
-If you're interested in writing a BitTorrent client, these resources were invaluable during development:
-- [How to Write a BitTorrent Client (Part 1)](http://www.kristenwidman.com/blog/33/how-to-write-a-bittorrent-client-part-1/)
-- [BitTorrent Specification](https://wiki.theory.org/BitTorrentSpecification)
-
-For `asyncio`, these articles offer great insights:
-- [How async/await Works in Python 3.5](http://www.snarky.ca/how-the-heck-does-async-await-work-in-python-3-5)
-- [Building a Computational Pipeline with asyncio](http://www.pythonsandbarracudas.com/blog/2015/11/22/developing-a-computational-pipeline-using-the-asyncio-module-in-python-3)
-- [David Beazley’s Coroutine Guide](http://dabeaz.com/coroutines/Coroutines.pdf)
-
 ---
 ## License
 BitStorm is released under the Apache v2 license. See `LICENSE` for details.
